@@ -1,0 +1,37 @@
+{
+  "name": "site",
+  "version": "0.1.0",
+  "description": "",
+  "homepage": "https://github.com/sid-civilization/site#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sid-civilization/site.git"
+  },
+  "author": "Eugene Karanda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sid-civilization/site/issues"
+  },
+  "devDependencies": {
+    "react-scripts": "^1.1.4"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-loading-animation": "^1.4.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
+  },
+  "proxy": "http://localhost:8080"
+}
