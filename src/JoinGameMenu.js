@@ -1,5 +1,6 @@
 import React from "react";
 import GameRow from "./GameRow";
+import Game from "./Game";
 import Loading from "react-loading-animation"
 import axios from 'axios'
 
@@ -12,6 +13,11 @@ class JoinGameMenu extends React.Component {
     componentDidMount() {
         axios.get("/game")
             .then(response => response.data)
+            .then(gamesJson =>
+                gamesJson.map(gameJson =>
+                    Game.fromJson(gameJson)
+                )
+            )
             .then(games => {
                 this.setState({
                     loading: false,
